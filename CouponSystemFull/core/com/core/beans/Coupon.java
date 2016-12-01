@@ -1,4 +1,4 @@
-package com.beans;
+package com.core.beans;
 import java.time.LocalDate;
 import java.util.HashSet;
 

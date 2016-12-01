@@ -3,7 +3,7 @@ package com.dbdao;
 import java.sql.*;
 import java.util.*;
 
-import com.beans.*;
+import com.core.beans.*;
 import com.dao.interfaces.*;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;

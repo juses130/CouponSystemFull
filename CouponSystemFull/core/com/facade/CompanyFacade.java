@@ -2,7 +2,7 @@ package com.facade;
 
 import java.util.*;
 
-import com.beans.*;
+import com.core.beans.*;
 import com.dao.interfaces.CompanyDAO;
 import com.dao.interfaces.CouponDAO;
 import com.exceptionerrors.*;

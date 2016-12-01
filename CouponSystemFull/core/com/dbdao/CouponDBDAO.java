@@ -9,9 +9,9 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.beans.Company;
-import com.beans.Coupon;
-import com.beans.CouponType;
+import com.core.beans.Company;
+import com.core.beans.Coupon;
+import com.core.beans.CouponType;
 import com.dao.interfaces.CouponDAO;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;

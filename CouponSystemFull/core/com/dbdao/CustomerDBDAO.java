@@ -7,8 +7,8 @@ import java.sql.Statement;
 import java.util.Collection;
 import java.util.HashSet;
 
-import com.beans.Coupon;
-import com.beans.Customer;
+import com.core.beans.Coupon;
+import com.core.beans.Customer;
 import com.dao.interfaces.CustomerDAO;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;

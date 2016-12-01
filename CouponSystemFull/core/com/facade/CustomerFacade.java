@@ -3,7 +3,7 @@ package com.facade;
 import java.util.Collection;
 import java.util.HashSet;
 
-import com.beans.*;
+import com.core.beans.*;
 import com.dao.interfaces.*;
 import com.exceptionerrors.*;
 import com.task.and.singleton.CouponClientFacade;

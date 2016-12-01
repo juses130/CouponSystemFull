@@ -3,8 +3,8 @@ package com.dbdao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.beans.Company;
-import com.beans.Coupon;
+import com.core.beans.Company;
+import com.core.beans.Coupon;
 import com.exceptionerrors.DaoException;
 import com.task.and.singleton.DBconnector;
 import com.task.and.singleton.DatabaseInfo;

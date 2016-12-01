@@ -1,4 +1,4 @@
-package com.beans;
+package com.core.beans;
 
 import java.util.Collection;
 

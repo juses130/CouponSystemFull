@@ -2,7 +2,7 @@ package com.dao.interfaces;
 
 import java.util.Collection;
 
-import com.beans.*;
+import com.core.beans.*;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;
 
