@@ -1,0 +1,12 @@
+/** body{
+    font-family: Arial;
+    font-size: 15px;
+}
+**/
+#fieldset {
+	text-align: center;
+	font-size: 20px;
+}
+#logOutBTN {
+	padding-top: 10px;
+}

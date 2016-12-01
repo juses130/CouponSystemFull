@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Customer Panel</title>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css_files/resultsInTable.css" />
+    <script type="text/javascript" src="Mylib/jquery-1.9.1.js"></script>
+  	<script type="text/javascript" src="Mylib/jquery.min.js"></script>
+  	<script type="text/javascript" src="Mylib/jquery.xdomainajax.js"></script>
+  
+	<script type="text/javascript" src="html_files/tools/jsfiles.js"></script>
+	<script type="text/javascript" src="javascript_files/customer.js"></script>
+	
+	
+	
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="innertube">
+        </div>
+    </header>
+
+    <div id="wrapper">
+
+        <main>
+            <div id="content">
+                <div class="innertube">
+                    <!-- <h1 style="mergin: 125px;">Heading</h1> 
+                    -->
+                    <!--here the dynamic content will change by JS and Ajax-->
+                </div>
+            </div>
+        </main>
+
+        <nav id="nav">
+            <div class="innertube">
+                <h3>Function Section</h3>
+                <ul>
+                    <li><button type="button" id="purchaseCoupon" onclick="couponsForPurchase_page();">Buy New Coupon</button></li>                  
+                    <li><button type="button" id="getCouponsByType" onclick="getYourCoupons_page();">Get Purchased Coupons</button></li>
+                    <li><button type="button" id="viewCustomer" onclick="viewCustomer_page();">View Your Customer Details</button></li>
+                    <li><button type="button" id="getCouponsByType" onclick="getCouponsByType_page();">Get Coupons By Type</button></li>
+                	<li><button type="button" id="getCouponsByPrice" onclick="getCouponsByPrice_page();">Get Coupons By Price</button></li>
+                	<li><button type="button" id="logOutBTN" onclick="location.href='logout';">Log Out</button></li>
+                	
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <footer id="footer">
+        <div class="innertube">
+            <p>Footer...</p>
+        </div>
+    </footer>
+
+</body>
+</html>

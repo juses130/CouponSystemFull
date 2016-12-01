@@ -1,0 +1,17 @@
+@CHARSET "windows-1255";
+table.resultInTable, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table.resultInTable {
+  text-align: left;
+  margin: auto;
+
+}
+table.resultInTable tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table.resultInTable tr:nth-child(even) {
+  background-color: #ffffff;
+}

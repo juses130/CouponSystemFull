@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="windows-1255">
+	<link rel="stylesheet" type="text/css" href="css_files/tableResults.css" />
+	
+<title></title>
+</head>
+
+<body>
+	<div  id="content">
+		<h3>Create New Coupon</h3>
+        Title: <input type="text" id="title" placeholder="Title"/><br>
+        Day Start: <input type="number" id="stDay" placeholder="Start Day" /><br>
+        Month Start: <input type="number" id="stMonth" placeholder="Start Month" /><br>
+        Year Start: <input type="number" id="stYear" placeholder="Start Year" /><br>
+        Day End: <input type="number" id="enDay" placeholder="End Day" /><br>
+        Month End: <input type="number" id="enMonth" placeholder="End Month" /><br>
+        Year End: <input type="number" id="enYear" placeholder="End Year" /><br>
+        Amount: <input type="number" id="amount" placeholder="Amount" /><br>
+        Category: 
+			 <select id="category">
+			 	<option value="Resturans">Resturans</option>
+			  	<option value="Electronics">Electronics</option>
+			  	<option value="Food">Food</option>
+			  	<option value="Health">Health</option>
+			  	<option value="Sport">Sport</option>
+			  	<option value="Camping">Camping</option>
+			  	<option value="Travel">Travel</option>
+			  	<option value="Music">Music</option>
+			  	<option value="Gaming">Gaming</option>
+			</select> <br>
+        Message: <input type="text" id="message" placeholder="Message"/><br>
+        Price: <input type="number" id="price" placeholder="Price"/><br>
+        Image-Url (Optional): <input type="text" id="image" placeholder=""/><br>
+        <input type="submit" value="Submit" onclick="createCoupon();"/>
+        
+        <div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="action_page.php">
+    			<div class="imgcontainer">
+    				<!-- This is span click for X (closing)-->
+      				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+    				
+    					<!-- Here is the results in the popup window. can be table or just message -->
+    					<div id='resultPopup'>
+    						
+    					</div>
+    					
+    			</div>
+    	<div class="container" style="background-color:#f1f1f1">
+      	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+      
+    </div>
+  </form>
+	<script>		
+	// Get the modal
+	var modal = document.getElementById('id01');
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+</script>
+</div>
+        
+    </div>
+</body>
+</html>

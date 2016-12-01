@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Admin Panel</title>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css_files/resultsInTable.css" />
+    <script type="text/javascript" src="Mylib/jquery-1.9.1.js"></script>
+  	<script type="text/javascript" src="Mylib/jquery.min.js"></script>
+  	<script type="text/javascript" src="Mylib/jquery.xdomainajax.js"></script>
+    <script type="text/javascript" src="javascript_files/admin.js"></script>
+	<script type="text/javascript" src="html_files/tools/jsfiles.js"></script>
+	
+	
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="innertube">
+        </div>
+    </header>
+
+    <div id="wrapper">
+
+        <main>
+            <div id="content">
+                <div class="innertube">
+                    <!-- <h1 style="mergin: 125px;">Heading</h1> 
+                    -->
+                    <!--here the dynamic content will change by JS and Ajax-->
+                </div>
+            </div>
+        </main>
+
+        <nav id="nav">
+            <div class="innertube">
+                <h3>Company Section</h3>
+                <ul>
+                    <li><button type="button" id="createComp" onclick="createCompany_page();">Create Company</button></li>
+                    <li><button type="button" id="removeCompID" onclick="removeCompanyByID_page();">Remove Company By ID</button></li>
+                    <li><button type="button" id="removeCompName" onclick="removeCompanyByName_page();">Remove Company By Name</button></li>
+                    <li><button type="button" id="updateCompany" onclick="updateCompany_page();">Update Company</button></li>
+                    <li><button type="button" id="getCompID" onclick="getCompanyByID_page();">Get Company By ID</button></li>
+                    <li><button type="button" id="getCompName" onclick="getCompanyByName_page();">Get Company By Name</button></li>
+                    <li><button type="button" id="getAllComps" onclick="getAllCompanies_page();">Get All Companies</button></li>
+                </ul>
+                <h3>Customer Section</h3>
+                <ul>
+                    <li><button type="button" id="createCust" onclick="createCustomer_page();">Create Customer</button></li>
+                    <li><button type="button" id="removeCustID" onclick="removeCustomerByID_page();">Remove Customer By ID</button></li>
+                    <li><button type="button" id="removeCustName" onclick="removeCustomerByName_page();">Remove Customer By Name</button></li>
+                    <li><button type="button" id="updateCust"onclick="updateCustomer_page();">Update Customer</button></li>
+                    <li><button type="button" id="getCustID" onclick="getCustomerByID_page();">Get Customer By ID</button></li>
+                    <li><button type="button" id="getCustName" onclick="getCustomerByName_page();">Get Customer By Name</button></li>
+                    <li><button type="button" id="getAllCusts" onclick="getAllCustomers_page();">Get All Customers</button></li>
+                </ul>
+                <h3>Coupon Section</h3>
+                <ul>
+                    <li><button type="button" id="getCoupID" onclick="getCouponByID_page();">Get Coupon By ID</button></li>
+                    <li><button type="button" id="removeCoupID"  onclick="removeCouponByID_page();">Remove Coupon By ID</button></li>
+                    <li><button type="button" id="getCoupsByPrice" onclick="getCouponsByPrice_page();">Get Coupons By Price</button></li>
+                    <li><button type="button" id="getCoupsByType" onclick="getCouponsByType_page();">Get Coupons By Type</button></li>
+                    <li><button type="button" id="getAllCoups" onclick="getAllCoupons_page();">Get All Coupons</button></li>
+                	<li><button type="button" id="logOutBTN" onclick="location.href='logout';">Log Out</button></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <footer id="footer">
+        <div class="innertube">
+            <p>Footer...</p>
+        </div>
+    </footer>
+
+</body>
+</html>
