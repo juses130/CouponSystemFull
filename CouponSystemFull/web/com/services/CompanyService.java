@@ -15,8 +15,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.core.beans.Company;
-import com.core.beans.Coupon;
+import com.beans.Company;
+import com.beans.Coupon;
 import com.exceptionerrors.ConnectorException;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;

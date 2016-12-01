@@ -4,7 +4,7 @@ import java.sql.*;
 import java.time.*;
 import java.util.*;
 
-import com.core.beans.*;
+import com.beans.*;
 import com.exceptionerrors.*;
 import com.facade.*;
 import com.task.and.singleton.CouponClientFacade;

@@ -2,9 +2,9 @@ package com.testpack;
 
 import java.time.LocalDate;
 
-import com.core.beans.Company;
-import com.core.beans.Coupon;
-import com.core.beans.CouponType;
+import com.beans.Company;
+import com.beans.Coupon;
+import com.beans.CouponType;
 import com.dbdao.CompanyDBDAO;
 import com.dbdao.CouponDBDAO;
 import com.exceptionerrors.ConnectorException;

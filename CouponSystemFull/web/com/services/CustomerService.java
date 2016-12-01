@@ -13,8 +13,8 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.core.beans.Coupon;
-import com.core.beans.Customer;
+import com.beans.Coupon;
+import com.beans.Customer;
 import com.exceptionerrors.ConnectorException;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;

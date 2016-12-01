@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.core.beans.*;
+import com.beans.*;
 import com.dao.interfaces.CompanyDAO;
 import com.dao.interfaces.CouponDAO;
 import com.dao.interfaces.CustomerDAO;
