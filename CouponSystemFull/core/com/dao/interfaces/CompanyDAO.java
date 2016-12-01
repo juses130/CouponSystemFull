@@ -2,7 +2,7 @@ package com.dao.interfaces;
 
 import java.util.*;
 
-import com.core.beans.*;
+import com.beans.*;
 import com.exceptionerrors.DaoException;
 
 public interface CompanyDAO {
