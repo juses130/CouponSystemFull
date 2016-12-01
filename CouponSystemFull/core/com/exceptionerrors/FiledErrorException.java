@@ -1,7 +1,5 @@
 package com.exceptionerrors;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 
 
 public class FiledErrorException extends Exception{

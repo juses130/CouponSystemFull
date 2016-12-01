@@ -5,28 +5,22 @@ import java.util.Collection;
 import java.util.HashSet;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.beans.Company;
 import com.beans.Coupon;
-import com.beans.Customer;
 import com.exceptionerrors.ConnectorException;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;
 import com.exceptionerrors.LoginException;
-import com.facade.AdminFacade;
 import com.facade.ClientType;
 import com.facade.CompanyFacade;
 import com.helpers.Message;

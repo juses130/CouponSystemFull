@@ -2,8 +2,6 @@ package com.task.and.singleton;
 
 import java.sql.*;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 import com.exceptionerrors.ConnectorException;
 /**
  * This is the updated Version 3 of DataBase Connector.

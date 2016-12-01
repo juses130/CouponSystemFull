@@ -12,7 +12,6 @@ import java.util.Set;
 import com.beans.Company;
 import com.beans.Coupon;
 import com.beans.CouponType;
-import com.beans.Customer;
 import com.dao.interfaces.CouponDAO;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;

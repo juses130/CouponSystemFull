@@ -20,7 +20,6 @@ import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;
 import com.exceptionerrors.LoginException;
 import com.facade.ClientType;
-import com.facade.CompanyFacade;
 import com.facade.CustomerFacade;
 import com.helpers.Message;
 import com.helpers.ServerLogPrint;

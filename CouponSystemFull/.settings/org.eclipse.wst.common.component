@@ -4,9 +4,7 @@
         <wb-resource deploy-path="/" source-path="/web_app"/>
         <wb-resource deploy-path="/" source-path="/core"/>
         <wb-resource deploy-path="/" source-path="/ejb"/>
-        <dependent-module archiveName="Coupon System.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Coupon System/Coupon System">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/web"/>
         <property name="java-output-path" value="/CouponSystemFull/build/classes"/>
         <property name="context-root" value="CouponSystemFull"/>
     </wb-module>
