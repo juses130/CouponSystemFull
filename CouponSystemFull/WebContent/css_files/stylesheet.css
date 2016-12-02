@@ -1,12 +1,111 @@
-/** body{
-    font-family: Arial;
-    font-size: 15px;
+@CHARSET "windows-1255";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
 }
-**/
-#fieldset {
+
+#header {
+	background: #baebf2;
+	height: 45px;
+	padding: 0px;
+}
+
+#header h1 {
 	text-align: center;
-	font-size: 20px;
+	margin: 0px;
+	line-height: 0px;
+	margin-left: 300px;
 }
-#logOutBTN {
-	padding-top: 10px;
+
+#header button {
+	background-color: black;
+	color: white;
+	width: 150px;
+	height: 45;
+	padding: 8px;
+	font-size: 16px;
+	border: 200px;
+	display: inline;
+	cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+	background-image: url("http://www.powerpointthemes.net/wp-content/uploads/2015/10/soft-modern-blue-background.jpg");
+}
+
+#nav {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 270px;
+	margin-left: -100%;
+	background: #ffffff;
+}
+
+#footer {
+	clear: left;
+	width: 100%;
+	background: #ccc;
+	text-align: center;
+	padding: 4px 0;
+	position: absolute;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+#content {
+	margin-left: 150px;
+}
+
+.innertube {
+	margin: 15px; /* Padding for content */
+	margin-top: 0;
+}
+
+p {
+	color: #555;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul button {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+li {
+	padding-bottom: 2px;
+}
+
+.btnstyle {
+	background-color: white;
+	color: black;
+	width: 270px
+	padding: 8px;
+	font-size: 16px;
+	border: none;
+	display: inline;
+	cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.btnstyle:hover {
+	background-color: #4c5759;
+	color: white;
 }

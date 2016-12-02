@@ -17,5 +17,6 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Programs/Java_lab/Add Jars/javax.persistence-2.0.3.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

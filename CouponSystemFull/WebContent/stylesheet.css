@@ -1,75 +1,126 @@
 @CHARSET "windows-1255";
 
 body {
-            margin: 0;
-            padding: 0;
-            font-family: Sans-Serif;
-            line-height: 1.5em;
-        }
+	margin: 0;
+	padding: 0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
+	background-image: url("http://www.planwallpaper.com/static/images/abstract_color_background_picture_8015.jpg");
+}
 
-        #header {
-            background: #ccc;
-            height: 45px;
-            padding: 23px;
-        }
+#header {
+	background: transparent;
+	height: 45px;
+	padding: 10px;
+}
 
-            #header h1 {
-                text-align: center;
-                margin: 125px;
-            }
+#header h1 {
+	text-align: center;
+	margin: -10px;
+	line-height: 0px;
+	text-decoration: underline;
+}
 
-        main {
-            padding-bottom: 10010px;
-            margin-bottom: -10000px;
-            float: left;
-            width: 100%;
-        }
+#header button {
+	background-color: dodgerblue;
+	color: white;
+	width: 150px;
+	height: 45;
+	padding: 8px;
+	font-size: 16px;
+	border: 200px;
+	display: inline;
+	cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
 
-        #nav {
-            padding-bottom: 10010px;
-            margin-bottom: -10000px;
-            float: left;
-            width: 234px;
-            margin-left: -100%;
-            background: #eee;
-        }
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+}
 
-        #footer {
-            clear: left;
-            width: 100%;
-            background: #ccc;
-            text-align: center;
-            padding: 4px 0;
-        }
+#nav {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 270px;
+	margin-left: -100%;
+	background: transparent;
+	
+}
 
-        #wrapper {
-            overflow: hidden;
-        }
+#footer {
+	text-align: center;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
 
-        #content {
-            margin-left: 125px; /* Same as 'nav' width */
-        }
+#wrapper {
+	overflow: hidden;
+}
 
-        .innertube {
-            margin: 15px; /* Padding for content */
-            margin-top: 0;
-        }
+#content {
+	margin-left: 150px;
+}
 
-        p {
-            color: #555;
-        }
+.innertube {
+	margin: 15px; /* Padding for content */
+	margin-top: 0;
+}
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+p {
+	color: #555;
+}
 
-            nav ul button {
-                font-family: Arial;
-                font-size: 14px;
-            }
-        
-        li {
-            padding-bottom: 2px;
-        }
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul button {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+li {
+	padding-bottom: 2px;
+}
+
+.btnstyle {
+	background-color: white;
+	color: black;
+	width: 270px
+	padding: 8px;
+	font-size: 16px;
+	border: none;
+	display: inline;
+	cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.btnstyle:hover {
+	background-color: #4c5759;
+	color: white;
+}
+
+#logOutBTN {
+	border-radius: 20px;
+}
+
+.innertube h3 {
+	text-decoration: underline;
+}
+
+.innertube button {
+	border-radius: 10px;
+	width: 90%;
+	height: 59%;
+}

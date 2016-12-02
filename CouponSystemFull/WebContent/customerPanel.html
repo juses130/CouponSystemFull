@@ -21,6 +21,9 @@
 
     <header id="header">
         <div class="innertube">
+        	<button id="logOutBTN" onclick="location.href='logout';">Log
+				Out</button>
+			<h1>Hello And Welcome To The Best Online Coupon Store!</h1>
         </div>
     </header>
 
@@ -38,16 +41,12 @@
 
         <nav id="nav">
             <div class="innertube">
-                <h3>Function Section</h3>
-                <ul>
-                    <li><button type="button" id="purchaseCoupon" onclick="couponsForPurchase_page();">Buy New Coupon</button></li>                  
-                    <li><button type="button" id="getCouponsByType" onclick="getYourCoupons_page();">Get Purchased Coupons</button></li>
-                    <li><button type="button" id="viewCustomer" onclick="viewCustomer_page();">View Your Customer Details</button></li>
-                    <li><button type="button" id="getCouponsByType" onclick="getCouponsByType_page();">Get Coupons By Type</button></li>
-                	<li><button type="button" id="getCouponsByPrice" onclick="getCouponsByPrice_page();">Get Coupons By Price</button></li>
-                	<li><button type="button" id="logOutBTN" onclick="location.href='logout';">Log Out</button></li>
-                	
-                </ul>
+                <h3>Choose Your Action:</h3>
+                <button class="btnstyle" id="purchaseCoupon" onclick="couponsForPurchase_page();">Buy New Coupon</button>                  
+                <button class="btnstyle" id="getCouponsByType" onclick="getYourCoupons_page();">Get Purchased Coupons</button>
+                <button class="btnstyle" id="viewCustomer" onclick="viewCustomer_page();">View Your Customer Details</button>
+                <button class="btnstyle" id="getCouponsByType" onclick="getCouponsByType_page();">Get Coupons By Type</button>
+                <button class="btnstyle" id="getCouponsByPrice" onclick="getCouponsByPrice_page();">Get Coupons By Price</button>
             </div>
         </nav>
 
@@ -55,7 +54,7 @@
 
     <footer id="footer">
         <div class="innertube">
-            <p>Footer...</p>
+           	<p>&copy Powered by RAY team, TLV 2016</p>
         </div>
     </footer>
 
