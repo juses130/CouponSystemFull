@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/web_app"/>
         <wb-resource deploy-path="/" source-path="/core"/>
         <wb-resource deploy-path="/" source-path="/ejb"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/web"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="java-output-path" value="/CouponSystemFull/build/classes"/>
         <property name="context-root" value="CouponSystemFull"/>
     </wb-module>

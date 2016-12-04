@@ -8,7 +8,18 @@
 <body>
 	<div  id="content">
 		<h3>Get Coupons By Category (type)</h3>
-        Coupon Category: <input type="text" id="category" placeholder="Category"/><br>
+        Coupon Category: 
+			 <select id="category">
+			 	<option value="Resturans">Resturans</option>
+			  	<option value="Electronics">Electronics</option>
+			  	<option value="Food">Food</option>
+			  	<option value="Health">Health</option>
+			  	<option value="Sport">Sport</option>
+			  	<option value="Camping">Camping</option>
+			  	<option value="Travel">Travel</option>
+			  	<option value="Music">Music</option>
+			  	<option value="Gaming">Gaming</option>
+			</select> <br>
         <input type="submit" value="Submit" onclick="getCouponsByType();"/>
         
         <div id="id01" class="modal">

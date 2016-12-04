@@ -1,5 +1,7 @@
 package com.services;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.HashSet;
 
@@ -15,6 +17,9 @@ import javax.ws.rs.core.Response;
 
 import com.beans.Coupon;
 import com.beans.Customer;
+import com.ejb.entities.Income;
+import com.ejb.entities.IncomeType;
+import com.ejb.services.IncomeServiceBean;
 import com.exceptionerrors.ConnectorException;
 import com.exceptionerrors.DaoException;
 import com.exceptionerrors.FiledErrorException;
@@ -69,7 +74,7 @@ public class CustomerService {
 		CustomerFacade custF =  (CustomerFacade)req.getSession().getAttribute(FACADE);	
 		Collection<Coupon> coupons = custF.getCouponForPurchase();
 		ServerLogPrint.messegeLog("loadAvailableCoupons", coupons.toString());
-
+		
 		return	Response.status(Response.Status.OK).entity(coupons.toArray(new Coupon[]{})).build();
 	} // loadAvailableCoupons
 	
@@ -94,6 +99,11 @@ public class CustomerService {
 		coupon.setId(coupID);
 		coupon = custF.purchaseCoupon(coupon);
 		
+		IncomeServiceBean incomeService = new IncomeServiceBean();
+		Income income = new Income(coupon.getTitle(), LocalDate.now(), IncomeType.CUSTOMER_PURCHASE, coupon.getPrice());
+//		System.out.println(income.toString());
+
+		incomeService.storeIncome(income);
 		return customResponse.getStatusOKPureBulild("purchaseCoupon", coupon);
 	} // purchaseCoupon
 	

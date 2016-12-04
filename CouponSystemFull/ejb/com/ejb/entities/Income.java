@@ -3,6 +3,7 @@ package com.ejb.entities;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import javax.ejb.EJB;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,10 +12,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity              // Declaring this class as Entity bean
-@Table(name= "income")  			// Declaring this class as a TABLE in the DataBase	
-public class Income implements Serializable{
-
-	private static final long serialVersionUID = 2375484131445142673L;
+@Table(name="income")		// Declaring this class as a TABLE in the DataBase	
+public class Income implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -30,9 +31,8 @@ public class Income implements Serializable{
 	private double amount;
 	
 	// Constructor
-	public Income(long id, String name, LocalDate date, IncomeType description, double amount) {
+	public Income(String name, LocalDate date, IncomeType description, double amount) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.date = date;
 		this.description = description;
@@ -44,11 +44,6 @@ public class Income implements Serializable{
 
 	public long getId() {
 		return id;
-	}
-
-
-	public void setId(long id) {
-		this.id = id;
 	}
 
 	public String getName() {

@@ -10,34 +10,31 @@ import com.ejb.entities.Income;
 
 @Stateless(name= "IncomeServiceEJB")
 public class IncomeServiceBean implements IncomeService{
-
+	
 	@PersistenceContext(unitName = "couponSystem")
-	private EntityManager incomeManager;
+	private EntityManager eManager;
 	
 	public IncomeServiceBean() {}
 	
 	@Override
 	public void storeIncome(Income income) {
-		incomeManager.persist(income);
+		eManager.persist(income);
 	}
 
 	@Override
 	public Collection<Income> viewAllIncome() {
 		String sqlQuery = "SELECT i FROM income i";
-//		return incomeManager.createQuery(sqlQuery, Income.class);
-		return null;
+		return eManager.createQuery(sqlQuery, Income.class).getResultList();
 	}
 
 	@Override
 	public Collection<Income> viewIncomeByCustomer(long customerID) {
-		// TODO Auto-generated method stub
-		return null;
+		return eManager.createQuery("SELECT i FROM income i WHERE i.id = " + customerID, Income.class).getResultList();
 	}
 
 	@Override
 	public Collection<Income> viewIncomeByCompany(long companyID) {
-		// TODO Auto-generated method stub
-		return null;
+		return eManager.createQuery("SELECT i FROM income i WHERE  i.id =" + companyID, Income.class).getResultList();
 	}
 
 }

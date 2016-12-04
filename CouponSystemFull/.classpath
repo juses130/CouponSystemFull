@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="web"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="core"/>
 	<classpathentry kind="src" path="ejb"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
@@ -18,5 +18,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Programs/Java_lab/Add Jars/javax.persistence-2.0.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/EclipseLink 2.5.2">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+			<attribute name="owner.project.facets" value="jpt.jpa"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
+	<referencedentry kind="lib" path="G:/Java Dev/servers/glassfish4/glassfish/modules/javax.ejb-api.jar"/>
 </classpath>
