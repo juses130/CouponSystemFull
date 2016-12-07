@@ -17,6 +17,7 @@ import javax.ws.rs.core.Response;
 
 import com.beans.Coupon;
 import com.beans.Customer;
+import com.client.BusinessDelegate;
 import com.ejb.entities.Income;
 import com.ejb.entities.IncomeType;
 import com.ejb.services.IncomeServiceBean;
@@ -102,7 +103,8 @@ public class CustomerService {
 		IncomeServiceBean incomeService = new IncomeServiceBean();
 		Income income = new Income(coupon.getTitle(), LocalDate.now(), IncomeType.CUSTOMER_PURCHASE, coupon.getPrice());
 //		System.out.println(income.toString());
-
+//		BusinessDelegate bd = new BusinessDelegate();
+//		bd.storeIncome(income);
 		incomeService.storeIncome(income);
 		return customResponse.getStatusOKPureBulild("purchaseCoupon", coupon);
 	} // purchaseCoupon
