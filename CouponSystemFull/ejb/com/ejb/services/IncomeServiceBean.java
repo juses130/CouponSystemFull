@@ -1,24 +1,17 @@
 package com.ejb.services;
 
-import java.sql.SQLClientInfoException;
 import java.util.Collection;
 
 import javax.ejb.Asynchronous;
+import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.persistence.EntityExistsException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
-
-import org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider;
-import org.osgi.service.jpa.EntityManagerFactoryBuilder;
-
 import com.ejb.entities.Income;
-import com.messageDriven.EntityManagerSetter;
 
-@Stateless(name= "IncomeServiceEJB")
+@Stateless(name= "incomeService")
 public class IncomeServiceBean implements IncomeService{
 	
 //	@PersistenceContext(unitName = "couponSystem")

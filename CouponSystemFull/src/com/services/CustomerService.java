@@ -100,12 +100,13 @@ public class CustomerService {
 		coupon.setId(coupID);
 		coupon = custF.purchaseCoupon(coupon);
 		
-		IncomeServiceBean incomeService = new IncomeServiceBean();
+//		IncomeServiceBean incomeService = new IncomeServiceBean();
 		Income income = new Income(coupon.getTitle(), LocalDate.now(), IncomeType.CUSTOMER_PURCHASE, coupon.getPrice());
 //		System.out.println(income.toString());
-//		BusinessDelegate bd = new BusinessDelegate();
-//		bd.storeIncome(income);
-		incomeService.storeIncome(income);
+		BusinessDelegate bd = new BusinessDelegate();
+		
+		bd.storeIncome(income);
+//		incomeService.storeIncome(income);
 		return customResponse.getStatusOKPureBulild("purchaseCoupon", coupon);
 	} // purchaseCoupon
 	

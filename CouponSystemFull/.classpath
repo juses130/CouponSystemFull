@@ -26,6 +26,10 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Programs/Java_lab/Add Jars/hibernate-core-4.1.9.Final.jar"/>
 	<classpathentry kind="lib" path="D:/Programs/Java_lab/Add Jars/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/Java_lab/Add Jars/jndi-properties.jar"/>
+	<classpathentry kind="lib" path="G:/Java Dev/servers/wildfly-10.0.0.Final/wildfly-10.0.0.Final/bin/client/jboss-cli-client.jar"/>
+	<classpathentry kind="lib" path="G:/Java Dev/servers/wildfly-10.0.0.Final/wildfly-10.0.0.Final/bin/client/jboss-client.jar"/>
+	<classpathentry kind="lib" path="G:/Java Dev/servers/wildfly-10.0.0.Final/wildfly-10.0.0.Final/bin/client/jnp-client-5.0.3.ga.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 	<referencedentry kind="lib" path="G:/Java Dev/servers/glassfish4/glassfish/modules/javax.ejb-api.jar"/>
 </classpath>
